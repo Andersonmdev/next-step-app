@@ -2,7 +2,7 @@
 
 Application for project and task management build with [React Native](https://reactnative.dev/) and [Expo](https://expo.io/).
 
-### Main libraries
+### Main libraries used
 
 - [Native Base](https://nativebase.io/)
 - [Phosphor Icons](https://phosphoricons.com/)
@@ -10,9 +10,7 @@ Application for project and task management build with [React Native](https://re
 
 ### Light and Dark theme
 
-![Light Theme](./docs/views/light-theme.jpg)
-![Dark Theme](./docs/views/dark-theme.jpg)
-
-## Authors
-
-- [@Andersonmdev](https://www.github.com/Andersonmdev)
+<div>
+  <img src="./docs/views/light-theme.jpg" width="100">
+  <img src="./docs/views/dark-theme.jpg" width="100">
+<div>
