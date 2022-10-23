@@ -12,11 +12,11 @@ export function Home() {
   return (
     <Container>
       <Stack flex={1} mx={4} space={1}>
-        <Stack h='15%'>
+        <Stack h='14%'>
           <MainHeader />
           <SearchBar />
         </Stack>
-        <Stack h='40%'>
+        <Stack h='35%'>
           <Stack direction='row' justifyContent='space-between' mb={2}>
             <Heading size='sm'>Recent Projects</Heading>
             <OpacityButton title='See All' color='lightBlue.50' bold />
@@ -26,7 +26,7 @@ export function Home() {
             <ProjectCard />
           </ScrollView>
         </Stack>
-        <Stack h='42%'>
+        <Stack h='40%'>
           <Stack direction='row' justifyContent='space-between'>
             <Heading size='sm'>Today Tasks</Heading>
             <OpacityButton title='See All' color='lightBlue.50' bold />

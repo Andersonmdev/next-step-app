@@ -22,7 +22,15 @@ export function TaskCard({ title, hour, done }: ITaskCardProps) {
           <Heading size='md'>{title}</Heading>
           <Text>{hour}</Text>
         </Stack>
-        <Checkbox value='done' accessibilityLabel='done' borderColor='lightBlue.50' />
+        <Checkbox
+          value='done'
+          accessibilityLabel='done'
+          borderColor='lightBlue.50'
+          _checked={{
+            bgColor: 'lightBlue.400',
+            borderColor: 'lightBlue.50'
+          }}
+        />
       </Stack>
     </Stack>
   );

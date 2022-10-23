@@ -16,7 +16,7 @@ export function HomeNavigation() {
 
   const getIconColor = (focused: boolean) => {
     if (focused) {
-      return colorMode === 'light' ? colors.darkText : colors.lightText;
+      return colors.lightText;
     } else {
       return colorMode === 'light' ? colors.darkText : colors.lightText;
     }
@@ -28,19 +28,23 @@ export function HomeNavigation() {
       <Tab.Navigator
         screenOptions={{
           headerShown: false,
+          tabBarShowLabel: false,
           tabBarActiveBackgroundColor: colors.lightBlue[50],
           tabBarActiveTintColor: colors.lightText,
           tabBarInactiveBackgroundColor: colorMode === 'light' ? colors.light[100] : colors.dark[50],
           tabBarInactiveTintColor: colorMode === 'light' ? colors.darkText : colors.lightText,
-          tabBarLabelStyle: { fontSize: sizes[3] }
-          // tabBarStyle: {
-          //   shadowColor: 'transparent',
-          //   borderTopColor: 'transparent',
-          //   marginHorizontal: sizes[2],
-          //   marginBottom: sizes[1],
-          //   borderRadius: sizes[10],
-          //   overflow: 'hidden'
-          // }
+          tabBarLabelStyle: { fontSize: sizes[3] },
+          tabBarStyle: {
+            left: 15,
+            right: 15,
+            bottom: 15,
+            elevation: 0,
+            borderRadius: 25,
+            borderTopColor: 'transparent',
+            overflow: 'hidden',
+            position: 'absolute',
+            backgroundColor: colorMode === 'light' ? colors.light[100] : colors.dark[50]
+          }
         }}
       >
         <Tab.Screen name="Home" component={Home} options={{
